@@ -21,13 +21,13 @@ let listAllTasks = () => { //arrow function
 //d
 let deleteTask = (task) => {
     let index = myTasks.indexOf(task); //find where task is located in array list
-    if (index > -1) {
+    if (index > -1) {  //if index has something in it
         myTasks.splice(index, 1); //remove the item at this location from array list
         console.log(task + " has been deleted");//show what task was removed
     } else {
-        console.log(task + " not found in list");
+        console.log(task + " not found in list"); //error prevention
     }
-    return myTasks.length;
+    return myTasks.length; //show lenth of array
 
 }
 
